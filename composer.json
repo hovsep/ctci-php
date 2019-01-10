@@ -1,0 +1,20 @@
+{
+  "name": "hovsep/ctci-php",
+  "description": "My solutions of 'Cracking the coding interview v4' in PHP ",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Hovsep Avakyan",
+      "email": "avakyan.hovsep@yandex.ru"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^7"
+  },
+  "autoload": {
+    "psr-4": {
+      "Src\\": "src/"
+    }
+  }
+}
