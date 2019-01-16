@@ -7,7 +7,7 @@ use ArraysAndStrings\Permutation;
 class PermutationTest extends \PHPUnit\Framework\TestCase
 {
 
-    public function testIsUniqueChars()
+    public function testIsPermutation()
     {
         $this->assertTrue(Permutation::isPermutation("abcdefgg", "gbadcgfe"));
         $this->assertTrue(Permutation::isPermutation("basic", "abcis"));

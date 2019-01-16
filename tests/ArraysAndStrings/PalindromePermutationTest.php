@@ -7,7 +7,7 @@ use ArraysAndStrings\PalindromePermutation;
 class PalindromePermutationTest extends \PHPUnit\Framework\TestCase
 {
 
-    public function testIsUniqueChars()
+    public function testIsPalindromePermutation()
     {
         $this->assertTrue(PalindromePermutation::isPalindromePermutation(""));
         $this->assertTrue(PalindromePermutation::isPalindromePermutation("a"));
