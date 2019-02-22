@@ -38,4 +38,13 @@ class DeleteMiddleNode
             $current = $current->next;
         }
     }
+
+    public static function deleteMiddleNode2(MyLinkedListNode $nodeToDelete): void
+    {
+        if (!is_null($nodeToDelete->next)) {
+            $next = $nodeToDelete->next;
+            $nodeToDelete->data = $next->data;
+            $nodeToDelete->next = $next->next;
+        }
+    }
 }
