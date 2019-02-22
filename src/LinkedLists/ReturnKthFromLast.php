@@ -8,7 +8,12 @@
 
 namespace LinkedLists;
 
-
+/**
+ * Question 2.2 Implement an algorithm to find the kth to last element of a singly linked list
+ *
+ * Class ReturnKthFromLast
+ * @package LinkedLists
+ */
 class ReturnKthFromLast
 {
 
