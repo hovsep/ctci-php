@@ -6,7 +6,7 @@ require_once __DIR__ . '/../../src/LinkedLists/DeleteMiddleNode.php';
 
 use LinkedLists\DeleteMiddleNode;
 
-class ReturnKthFromLastTest extends \PHPUnit\Framework\TestCase
+class DeleteMiddleNodeTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testWithMiddle()
