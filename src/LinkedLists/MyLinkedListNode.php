@@ -29,7 +29,7 @@ class MyLinkedListNode {
             $current = $current->next;
         }
 
-        return $s;
+        return (string) $s;
     }
 
 
