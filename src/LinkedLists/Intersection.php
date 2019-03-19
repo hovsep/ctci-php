@@ -31,6 +31,7 @@ class Intersection
         $tail1 = null;
         $tail2 = null;
 
+        //Get length of first list
         while (!is_null($r1)) {
             $len1++;
 
@@ -41,6 +42,7 @@ class Intersection
             $r1 = $r1->next;
         }
 
+        //Get length of second list
         while (!is_null($r2)) {
             $len2++;
 
@@ -51,6 +53,7 @@ class Intersection
             $r2 = $r2->next;
         }
 
+        //If tails are different - there is no intersection
         if ($tail1 !== $tail2) {
             //No intersection
             return false;
@@ -59,6 +62,7 @@ class Intersection
         $r1 = $head1;
         $r2 = $head2;
 
+        //Adjust runners to same distance from tails
         while ($len1 != $len2) {
             if ($len1 > $len2) {
                 $len1--;
@@ -71,9 +75,11 @@ class Intersection
             }
         }
 
+        //Iterate both lists
         while (!is_null($r1) || !is_null($r2)) {
 
             if ($r1 === $r2) {
+                //$r1 is intersection point
                 return true;
             }
 
