@@ -13,20 +13,19 @@ class QuickSort
 {
 
     public static function qsort($array) {
-        $length = count($array);
+        $len = count($array);
 
-        if ($length <= 1) {
+        if ($len <= 1) {
             return $array;
         } else {
-            $pivot = reset($array);
-
+            $pivot = array_shift($array);
             $left = $right = [];
 
-            for ($i=1; $i < $length; $i++) {
-                if ($array[$i] < $pivot) {
-                    $left[] = $array[$i];
+            foreach ($array as $item) {
+                if ($item < $pivot) {
+                    $left[] = $item;
                 } else {
-                    $right[] = $array[$i];
+                    $right[] = $item;
                 }
             }
 
